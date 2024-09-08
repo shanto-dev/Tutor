@@ -1,0 +1,16 @@
+{
+  "name": "tutor-today",
+  "version": "1.0.0",
+  "main": "index.js",
+ "scripts": {
+        "sass": "sass ./assets/sass/tutor.scss ./assets/css/tutor.css",
+        "sass:watch": "sass --watch ./assets/sass/tutor.scss ./assets/css/tutor.css"
+    },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "sass": "^1.78.0"
+  }
+}

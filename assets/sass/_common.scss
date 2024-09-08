@@ -1,0 +1,65 @@
+.bg_img {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: scroll;
+}
+
+
+// Scroll To top 
+.scroll-top {
+    width: 45px;
+    height: 45px;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    cursor: pointer;
+    z-index: 999992;
+    border-radius: 50%;
+    color: $white-color;
+    display: none;
+    border: 0;
+    outline: 0;
+    overflow: hidden;
+    @include displaFlex(flex, center, center, column);
+    background: $primary-color;
+    background: -moz-gradient(135deg, $secondary-color 33%, $primary-color 66%);
+    background: -webkit-linear-gradient(135deg, $secondary-color 33%, $primary-color 66%);
+    background: -webkit-linear-gradient(315deg, $secondary-color 33%, $primary-color 66%);
+    background: -moz-linear-gradient(315deg, $secondary-color 33%, $primary-color 66%);
+    background: linear-gradient(135deg, $secondary-color 33%, $primary-color 66%);
+
+    & i {
+        font-size: 18px;
+        padding: 13.5px 15.75px;
+    }
+
+    &:hover {
+        background: $secondary-color;
+        background: -moz-gradient(135deg, $primary-color 33%, $secondary-color 66%);
+        background: -webkit-linear-gradient(135deg, $primary-color 33%, $secondary-color 66%);
+        background: -webkit-linear-gradient(315deg, $primary-color 33%, $secondary-color 66%);
+        background: -moz-linear-gradient(315deg, $primary-color 33%, $secondary-color 66%);
+        background: linear-gradient(135deg, $primary-color 33%, $secondary-color 66%);
+    }
+}
+
+@include col {
+    .mt-86 {
+        margin-top: 48px;
+    }
+
+    .mb-86 {
+        margin-bottom: 48px;
+    }
+}
+
+@media(min-width: 1920px) {
+    .product_filter__one {
+        & .container-flwid {
+            max-width: 1920px;
+            width: 100%;
+            margin: 0 auto;
+        }
+    }
+}
