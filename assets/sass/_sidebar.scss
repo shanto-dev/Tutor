@@ -1,0 +1,14 @@
+aside.tutor_sidebar {
+    width: 345px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    box-shadow: 18px 4px 35px 0px rgba(0, 0, 0, 0.02);
+    z-index: 1212;
+    background: url(../images/pattern-bg-11.png) no-repeat bottom -10% right -10% / 110%;
+
+    & .logo {
+        padding: 37px 30px 30px 38px;
+    }
+}
