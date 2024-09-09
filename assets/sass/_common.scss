@@ -1,3 +1,17 @@
+// scrollbar 
+body::-webkit-scrollbar-track {
+    background-color: #ACDCFF;
+}
+
+body::-webkit-scrollbar {
+    width: 4px;
+    background-color: $primary-color;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: $primary-color;
+}
+
 .bg_img {
     background-size: cover;
     background-repeat: no-repeat;
@@ -17,44 +31,6 @@
     padding: 20px 75px;
 }
 
-
-// Scroll To top 
-.scroll-top {
-    width: 45px;
-    height: 45px;
-    position: fixed;
-    right: 20px;
-    bottom: 20px;
-    cursor: pointer;
-    z-index: 999992;
-    border-radius: 50%;
-    color: $white-color;
-    display: none;
-    border: 0;
-    outline: 0;
-    overflow: hidden;
-    @include displaFlex(flex, center, center, column);
-    background: $primary-color;
-    background: -moz-gradient(135deg, $secondary-color 33%, $primary-color 66%);
-    background: -webkit-linear-gradient(135deg, $secondary-color 33%, $primary-color 66%);
-    background: -webkit-linear-gradient(315deg, $secondary-color 33%, $primary-color 66%);
-    background: -moz-linear-gradient(315deg, $secondary-color 33%, $primary-color 66%);
-    background: linear-gradient(135deg, $secondary-color 33%, $primary-color 66%);
-
-    & i {
-        font-size: 18px;
-        padding: 13.5px 15.75px;
-    }
-
-    &:hover {
-        background: $secondary-color;
-        background: -moz-gradient(135deg, $primary-color 33%, $secondary-color 66%);
-        background: -webkit-linear-gradient(135deg, $primary-color 33%, $secondary-color 66%);
-        background: -webkit-linear-gradient(315deg, $primary-color 33%, $secondary-color 66%);
-        background: -moz-linear-gradient(315deg, $primary-color 33%, $secondary-color 66%);
-        background: linear-gradient(135deg, $primary-color 33%, $secondary-color 66%);
-    }
-}
 
 @include col {
     .mt-86 {

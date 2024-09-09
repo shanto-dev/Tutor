@@ -4,7 +4,7 @@ $primary-font: "Poppins", sans-serif;
 
 $primary-color: #2258BF;
 $secondary-color: #818181;
-$heading-color: #222222;
+$heading-color: #342E59;
 $body-color: #858585;
 $white-color: #FFFFFF;
 $body-font-size: 16px;
@@ -34,6 +34,7 @@ h5,
 h6 {
     font-weight: 700;
     color: $heading-color;
+    font-family: $primary-font;
     line-height: 1.1;
 }
 
@@ -58,6 +59,8 @@ a {
     margin: 0 auto;
 }
 
+
+// spacing 
 .mr-20 {
     margin-right: 20px;
 }
@@ -85,6 +88,7 @@ a {
 .gy-40 {
     --bs-gutter-y: 40px;
 }
+
 
 // Mixin
 @mixin displaFlex($flex, $justify, $alignItems, $direction) {
