@@ -1,0 +1,75 @@
+.classroom_con {
+    position: relative;
+    background: #FAFAFA !important;
+    min-height: 100vh;
+
+    & h2 {
+        font-size: 34px;
+        line-height: 51px;
+        font-weight: 600;
+    }
+}
+.classroom {
+    position: relative;
+    margin: 63px 0 0;
+    padding: 0 0 120px;
+    & .rooms-det {
+        background: #EEEEEE;
+        border-radius: 32px;
+        width: 100%;
+        min-height: 317px;
+        padding: 49px 32px 75px 56px;
+        margin: 0 0 40px;
+        & h4 {
+            font-size: 24px;
+            line-height: 36px;
+            font-weight: 600;
+            margin: 0;
+        }
+        & p {
+            font-size: 24px;
+            line-height: 36px;
+            color: $heading-color;
+        }
+    }
+    & .download-sesson{
+        max-width: 832px;
+        width: 100%;
+        margin: 0 auto;
+        & h3 {
+            font-size: 30px;
+            line-height: 39.06px;
+            color: #222222;
+            font-weight: 700;
+            font-family: $secondary-font;
+        }
+        & .download {
+            background: $white-color;
+            border-radius: 12px;
+            padding: 19px;
+            text-align: center;
+            margin: 0 0 8.5px;
+            & img {
+                margin: 0 0 10px;
+            }
+            & p {
+                font-family: $secondary-font;
+                font-size: 30px;
+                line-height: 39.06px;
+                color: #909090;
+                font-weight: 500;
+                margin: 0 0 16px;
+            }
+        }
+        & a.dn_pdf {
+            display: inline-block;
+            background: rgba(34, 34, 34, 0.1);
+            border-radius: 6px;
+            padding: 21px 38px;
+            font-size: 18px;
+            font-weight: 500;
+            text-transform: uppercase;
+            color: #222222;
+        }
+    }
+}

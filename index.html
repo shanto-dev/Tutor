@@ -38,43 +38,40 @@
                     <div class="navbar-list">
                         <ul class="nav d-block" id="myTab" role="tablist">
                             <li class="nav-item classroom-nav">
-                                <a class="nav-link" id="classroom-parent-tab" data-toggle="tab" href="#classroom-parent" role="tab" aria-controls="classroom-parent" aria-selected="true">
-                                    <img src="https://tutortoday.io/wp-content/themes/ecenter-child/Portal/overview/images/pennib-icon1.svg" alt="pennib-icon1">
-                                    <span>Classroom <small class="live">
-                                            <label>Live</label>
-                                        </small>
-                                    </span>
+                                <a class="nav-link" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane" type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">
+                                    <span><img src="assets/images/nav-icon/PenNib.svg" alt="pennib-icon1"></span>
+                                    <span>Luke <small>Switch child</small></span>
+
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link active" id="overview-tab" data-toggle="tab" href="#overview" role="tab" aria-controls="overview" aria-selected="true">
-                                    <img src="https://tutortoday.io/wp-content/themes/ecenter-child/Portal/overview/images/overview-icon.svg" alt="overview-icon">
+                                <a class="nav-link" id="overview-tab" data-bs-toggle="tab" data-bs-target="#overview-tab-pane" type="button" role="tab" aria-controls="overview-tab-pane" aria-selected="false">
+                                    <span><img src="assets/images/nav-icon/key-square.svg" alt="overview-icon"></span>
                                     <span>Overview</span>
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" id="chat-parent-tab" data-toggle="tab" href="#chat-parent" role="tab" aria-controls="chat-parent" aria-selected="true">
-                                    <img src="https://tutortoday.io/wp-content/themes/ecenter-child/Portal/overview/images/chat-icon1.svg" alt="chat-icon">
-                                    <span>Chat with parent</span>
+                                <a class="nav-link" id="chat-tab" data-bs-toggle="tab" data-bs-target="#chat-tab-pane" type="button" role="tab" aria-controls="chat-tab-pane" aria-selected="false">
+                                    <span><img src="assets/images/nav-icon/chat.svg" alt="chat-icon"></span>
+                                    <span>Chat with tutor</span>
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" id="lesson-parent-tab" data-toggle="tab" href="#lesson-parent" role="tab" aria-controls="lesson-parent" aria-selected="true">
-                                    <img src="https://tutortoday.io/wp-content/themes/ecenter-child/Portal/overview/images/book-icon2.svg" alt="book-icon">
-                                    <span>Lesson hub</span>
+                                <a class="nav-link" id="lesson-tab" data-bs-toggle="tab" data-bs-target="#lesson-tab-pane" type="button" role="tab" aria-controls="lesson-tab-pane" aria-selected="false">
+                                    <span><img src="assets/images/nav-icon/book.svg" alt="book-icon"></span>
+                                    <span>Learning hub</span>
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" id="hours-parent-tab" data-toggle="tab" href="#hours-parent" role="tab" aria-controls="hours-parent" aria-selected="true">
-                                    <img src="https://tutortoday.io/wp-content/themes/ecenter-child/Portal/overview/images/date-icon1.svg" alt="date-icon">
-                                    <span>Working hours</span>
+                                <a class="nav-link" id="child-tab" data-bs-toggle="tab" data-bs-target="#child-tab-pane" type="button" role="tab" aria-controls="child-tab-pane" aria-selected="false">
+                                    <span><img src="assets/images/nav-icon/child.svg" alt="date-icon"></span>
+                                    <span>Add a child</span>
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" id="tutor-parent-tab" data-toggle="tab" href="#tutor-parent" role="tab" aria-controls="tutor-parent" aria-selected="true">
-                                    <img src="https://tutortoday.io/wp-content/themes/ecenter-child/Portal/overview/images/refer-icon1.svg" alt="refer-icon">
-                                    <span>Refer a tutor <small> Get £20 for every tutor </small>
-                                    </span>
+                                <a class="nav-link" id="ai-buddy-tab" data-bs-toggle="tab" data-bs-target="#ai-buddy-tab-pane" type="button" role="tab" aria-controls="ai-buddy-tab-pane" aria-selected="false">
+                                    <span><img src="assets/images/nav-icon/ai-buddy.svg" alt="date-icon"></span>
+                                    <span>Ai Buddy</span>
                                 </a>
                             </li>
                             <li class="nav-item">
@@ -175,9 +172,91 @@
                     </li>
                 </ul>
             </div>
-            <section class="section_content tab_content">
-                <div class="tab-pane fade show active" id="overview" role="tabpanel" aria-labelledby="Overview-tab">
-                    <h1>Text & Content Here</h1>
+
+            <!-- Main Content  -->
+            <section class="section_content classroom_con tab-content" id="myTabContent">
+                <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
+                    <h2>Classroom</h2>
+                    <div class="classroom">
+                        <div class="rooms-det">
+                            <h4>Details</h4>
+                            <p>Download lesson material to upload into your lessonspace class</p>
+                        </div>
+                        <div class="download-sesson">
+                            <h3>Download lesson files</h3>
+                            <div class="download">
+                                <img src="assets/images/download-04.svg" alt="Tutor">
+                                <p>Click to download</p>
+                                <a href="#" class="tutorBtn" download>Download</a>
+                            </div>
+                            <a class="dn_pdf" href="javascript:void(0);">PDF</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="overview-tab-pane" role="tabpanel" aria-labelledby="overview-tab" tabindex="0">
+                    <div class="overview">
+                    <h2>Overview</h2>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="chat-tab-pane" role="tabpanel" aria-labelledby="chat-tab" tabindex="0">
+                    <div class="chat-parent">
+                        <h2>Chat with parent</h2>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="lesson-tab-pane" role="tabpanel" aria-labelledby="lesson-tab" tabindex="0">
+                    <div class="lesson">
+                    <h2>Lesson hub</h2>
+                </div>
+                <div class="tab-pane fade" id="child-tab-pane" role="tabpanel" aria-labelledby="child-tab" tabindex="0">
+                    <h2>Add a child</h2>
+                </div>
+                <div class="tab-pane fade" id="ai-buddy-tab-pane" role="tabpanel" aria-labelledby="ai-buddy" tabindex="0">
+                    <h2>Ai Buddy</h2>
+                </div>
+                <div class="tab-pane modify_content fade show active" id="modify-tab-pane" role="tabpanel" aria-labelledby="modify-tab" tabindex="0">
+                    <h2>Elevate Your Child's Grades and Confidence</h2>
+                    <h3>"Some of our biggest grade improvers take more than 2 core subjects with us"</h3>
+                    <div class="row justify-content-center improves_sub_row">
+                        <div class="col-lg-4">
+                            <div class="improves_subject_items">
+                                <h2>Lilly</h2>
+                                <h3>Current</h3>
+                                <ul>
+                                    <li>GCSE Maths</li>
+                                    <li>GCSE Physics</li>
+                                    <li><span class="buddy_on">ON</span>Ai Buddy</li>
+                                </ul>
+                                <div class="improves_subject_items__body">
+                                    <label for="">Text Field <span>-/+</span></label>
+                                    <select name="Select Subject" id="">
+                                        <option value="">+ 2 Core Subjects <small>(Add)</small></option>
+                                        <option value="">+ 1 Core Subject <small>(Add)</small></option>
+                                        <option selected>No Change</option>
+                                        <option value="">- 1 Core Subjects <small>(Remove)</small></option>
+                                        <option value="">- 2 Core Subjects <small>(Remove)</small></option>
+                                        <option value="">- Ai Buddy <small>(Remove)</small></option>
+                                    </select>
+                                    <ul class="improves_sub_list">
+                                        <li>Add 1 Core Subject / £48 more monthly</li>
+                                    </ul>
+                                </div>
+                                <div class="improves_subject_items__btn">
+                                    <button type="submit">Upgrade</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modify_content__shape">
+                        <img src="assets/images/shape/modify-l-shape-1.svg" alt="tutor">
+                        <img src="assets/images/shape/modify-l-shape-2.svg" alt="tutor">
+                        <img src="assets/images/shape/modify-r-shape-1.svg" alt="tutor">
+                        <img src="assets/images/shape/modify-r-shape-2.svg" alt="tutor">
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="refer-tab-pane" role="tabpanel" aria-labelledby="refer-tab" tabindex="0">
+                    <div class="refer">
+                        <h2>Refer a tutor</h2>
+                    </div>
                 </div>
             </section>
         </article>
