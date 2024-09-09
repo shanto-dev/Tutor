@@ -2,6 +2,7 @@
 .modify_content {
     position: relative;
     min-height: calc(100vh - 189px);
+    z-index: 2;
 
     &>h2 {
         font-size: 45px;

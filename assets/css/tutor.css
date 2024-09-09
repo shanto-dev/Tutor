@@ -1,7 +1,7 @@
 /*--------------------------------------------------------------
 # Utility
 --------------------------------------------------------------*/
-@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -110,6 +110,8 @@ body::-webkit-scrollbar-thumb {
   background: #2258BF;
   border-radius: 50px;
   padding: 20px 75px;
+  border: 0;
+  outline: 0;
 }
 
 @media (max-width: 575px) {
@@ -356,9 +358,86 @@ section.section_content {
   overflow: hidden;
 }
 
+.classroom_con {
+  position: relative;
+  background: #FAFAFA !important;
+  min-height: 100vh;
+}
+.classroom_con h2 {
+  font-size: 34px;
+  line-height: 51px;
+  font-weight: 600;
+}
+
+.classroom {
+  position: relative;
+  margin: 63px 0 0;
+  padding: 0 0 120px;
+}
+.classroom .rooms-det {
+  background: #EEEEEE;
+  border-radius: 32px;
+  width: 100%;
+  min-height: 317px;
+  padding: 49px 32px 75px 56px;
+  margin: 0 0 40px;
+}
+.classroom .rooms-det h4 {
+  font-size: 24px;
+  line-height: 36px;
+  font-weight: 600;
+  margin: 0;
+}
+.classroom .rooms-det p {
+  font-size: 24px;
+  line-height: 36px;
+  color: #342E59;
+}
+.classroom .download-sesson {
+  max-width: 832px;
+  width: 100%;
+  margin: 0 auto;
+}
+.classroom .download-sesson h3 {
+  font-size: 30px;
+  line-height: 39.06px;
+  color: #222222;
+  font-weight: 700;
+  font-family: "DM Sans", sans-serif;
+}
+.classroom .download-sesson .download {
+  background: #FFFFFF;
+  border-radius: 12px;
+  padding: 19px;
+  text-align: center;
+  margin: 0 0 8.5px;
+}
+.classroom .download-sesson .download img {
+  margin: 0 0 10px;
+}
+.classroom .download-sesson .download p {
+  font-family: "DM Sans", sans-serif;
+  font-size: 30px;
+  line-height: 39.06px;
+  color: #909090;
+  font-weight: 500;
+  margin: 0 0 16px;
+}
+.classroom .download-sesson a.dn_pdf {
+  display: inline-block;
+  background: rgba(34, 34, 34, 0.1);
+  border-radius: 6px;
+  padding: 21px 38px;
+  font-size: 18px;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: #222222;
+}
+
 .modify_content {
   position: relative;
   min-height: calc(100vh - 189px);
+  z-index: 2;
 }
 .modify_content > h2 {
   font-size: 45px;
